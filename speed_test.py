@@ -13,7 +13,7 @@ index_conti = np.ascontiguousarray(index_all[:, com3d_x:com3d_x+64, com3d_y:com3
 
 assert np.all(index_conti2==index_conti)
 
-# %% CROP有序片段内存读取: 279fps, 4.9 MB/s
+# %% CROP有序片段内存读取: 279fps, 4.9 GB/s
 for _ in tqdm.trange(1000):
     index_conti = np.ascontiguousarray(index_all[:, com3d_x:com3d_x+64, com3d_y:com3d_y+64, com3d_z:com3d_z+64])
 
